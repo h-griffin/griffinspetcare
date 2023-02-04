@@ -25,3 +25,5 @@
             - emergency contact - number & name
             - medication - bool
     - select days and auto fill  
+
+- add to linktree
