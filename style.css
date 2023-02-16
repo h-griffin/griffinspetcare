@@ -6,17 +6,42 @@ body {
     background-color: #f0f5ff;
 }
 
+i{
+    font-size: 1.5em;
+    color: #bccbe9;
+}
+
 h1 {
     font-size: 48px;
     color: #232c3d;
 }
 
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.center{
+    text-align: center;
+}
+
+/* --- NAV --- */
 nav{
     display: flex;
     justify-content: space-evenly;
     width: 40%;
-    margin: 0 auto;
+    margin: 2% auto;
+}
+
+nav a{
+    text-decoration: none;
 }
 a div{
     width: 100px;
@@ -25,11 +50,18 @@ a div{
     background-color: #f0f5ff;
     border: 2px solid #bccbe9;
     text-decoration: none;
+    color: black;
     
 }
-a div:active,
-a div:hover  {
+a.current div{
     background-color: #bccbe9;
+}
+
+/* hover on desktop only */
+@media screen and (min-width: 800px){
+    a div:hover  {
+        background-color: #bccbe9;
+    }
 }
 
 
@@ -37,7 +69,6 @@ a div:hover  {
 
 .wrapper {
     width: 742px;
-    /* width: 80%; */
     margin: auto;
     background-color: white;
     border-radius: 10px;
@@ -107,8 +138,7 @@ table.customTable {
     table-layout: fixed;
 }
 
-table.customTable td,
-table.customTable th {
+table.customTable td, table.customTable th {
     border-width: 2px;
     border-color: #F8F8F8;
     border-style: solid;
@@ -131,8 +161,7 @@ table.month {
     width: 100%;
 }
 
-table.month td,
-table.month th {
+table.month td, table.month th {
     border-width: 2px;
     border-color: #BCCBE9;
     border-style: solid;
@@ -142,7 +171,6 @@ table.month th {
 table.month thead {
     background-color: #bccbe9;
 }
-
 
 .unavailable {
     background-color: lightgrey;
@@ -171,14 +199,68 @@ table.month thead {
 
 
 /* === HOME === */
-
  
 .header{
     width: 742px;
-    margin: 10px auto;
+    margin: 5% auto;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgb(0 0 0 / 10%);
+    padding: 5% 0px;
+}
+
+#home-hero{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#home-article{
+    justify-content: center;
+}
+ 
+#home-hero h3, #home-hero h1{
+    text-align: left;
+    margin: 0;
+}
+
+#griffin{
+    width: 35%;
+}
+
+#home .header section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#services div{
+    align-items: center;
+}
+#services div p{
+    width: 90%;
+}
+#services div div{
+    width: 10%;
+}
+#services div i {
+    width: 10%;
+}
+    
+#certificate {
+    width: 10%;
+    left: 19px;
+    bottom: -15px;
+    position: absolute;
+}
+#certificate-text {
+    left: 27px;
+    bottom: -15px;
+    color: white;}
+
+
+
+.fa-house-heart:before {
+    content: "\f4c9";
 }
 
 
@@ -186,7 +268,7 @@ table.month thead {
 
 #about-me main{
     width: 742px;
-    margin: 10px auto;
+    margin: 5% auto;
 }
 
 #about-me img, #about-me article{ 
@@ -195,14 +277,12 @@ table.month thead {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
     max-width: 100%;
     border: 2px solid white;
-    /* border-bottom: 30px solid white; */
 }
 
 .img-text-container {
     position: relative;
     text-align: center;
     color: white;
-    /* width: fit-content; */
 }
 .bottom-left-text {
     position: absolute;
@@ -220,58 +300,26 @@ table.month thead {
 #hero-text{
     width: 92%;
     margin: 0 auto;
-    /* left: unset; */
     left: 30px;
     bottom: 25px;
 }
 
-.flex-col{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#boat,
-#about-me article,
-#bio-header, 
-#bio-sub,
-#activity-header,
-#mcr {
+#boat, #about-me article, #bio-header, #bio-sub, #activity-header, #mcr {
     margin-top: 5%;
-}
-#brothers{
-    width: 50%;
-}
-#bio-side{
+} 
+#bio-side, #bmw, #activity-side{
     width: 42%;
 }
  
-#bandit{
+#bandit, #brothers, #elvis{
     width: 50%;
 }
-
-#bmw{
-    width: 42%;
-}
  
-
 /* --- ACTIVITY --- */
 #activity-article{
     padding: 0px 50px;
 }
 
-#elvis{
-    width: 50%;
-}
-#activity-side{
-    width: 42%;
-}
 #idkhow{
     width: 55%;
 }
