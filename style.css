@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;700&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    background-color: #f0f5ff;
+}
+
+i{
+    font-size: 1.5em;
+    color: #8a9aba;
+}
+
+h1 {
+    font-size: 48px;
+    color: #232c3d;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.center{
+    text-align: center;
+}
+
+/* --- NAV --- */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 2% auto;
+}
+
+nav a{
+    text-decoration: none;
+}
+a div{
+    width: 100px;
+    padding:  10px;
+    border-radius: 50px;
+    background-color: #f0f5ff;
+    border: 2px solid #bccbe9;
+    text-decoration: none;
+    color: black;
+    
+}
+a.current div{
+    background-color: #bccbe9;
+}
+
+/* hover on desktop only */
+@media screen and (min-width: 800px){
+    a div:hover  {
+        background-color: #bccbe9;
+    }
+}
+
+
+/* === CALENDAR === */
+
+.wrapper {
+    width: 742px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+}
+
+.buttonWrapper {
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+@media screen and (max-width: 800px) {
+
+    /* on mobile have months as select drop down not tabs - or put tabs in a drop down? */
+    .buttonWrapper {
+        display: grid;
+    }
+}
+
+button {
+    letter-spacing: 3px;
+    border: none;
+    padding: 10px;
+    background-color: #bccbe9;
+    color: #232c3d;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #d5e3ff;
+}
+
+button.active {
+    background-color: white;
+}
+
+.active {
+    background-color: white;
+}
+
+p {
+    text-align: left;
+    padding: 10px;
+}
+
+.content {
+    display: none;
+    padding: 10px 20px;
+}
+
+.content.active {
+    display: block;
+}
+
+table.customTable {
+    width: 742px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #F8F8F8;
+    border-style: solid;
+    color: #000000;
+    table-layout: fixed;
+}
+
+table.customTable td, table.customTable th {
+    border-width: 2px;
+    border-color: #F8F8F8;
+    border-style: solid;
+    padding: 5px 0px;
+}
+
+table.customTable thead {
+    background-color: #F8F8F8;
+}
+
+table.month {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #BCCBE9;
+    border-style: solid;
+    color: #000000;
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.month td, table.month th {
+    border-width: 2px;
+    border-color: #BCCBE9;
+    border-style: solid;
+    padding: 15px 0px;
+}
+
+table.month thead {
+    background-color: #bccbe9;
+}
+
+.unavailable {
+    background-color: lightgrey;
+}
+
+#available-example {
+    width: 10px;
+    height: 10px;
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+
+#unavailable-example {
+    width: 10px;
+    height: 10px;
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+}
+
+#examples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* === HOME === */
+ 
+.header{
+    width: 742px;
+    margin: 5% auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 10%);
+    padding: 5% 0px;
+}
+
+#home-hero{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#home-article{
+    margin-left: 50px;
+    padding-left: 50px;
+    justify-content: center;
+    border-left: 2px solid dimgrey;
+}
+#home-article div{
+    text-align: left;
+}
+#home-article div a i{
+    color: #bccbe9;
+}
+
+@media screen and (min-width: 800px){
+    /* hover on desktop only */
+    #home-article div a i:hover{
+        color: #8a9aba;
+    }
+}
+
+ 
+#home-hero h3, #home-hero h1, #home-hero h4{
+    text-align: left;
+    margin: 0;
+}
+#home-hero h3, #home-hero h4{
+    color: dimgrey;
+}
+
+#griffin{
+    width: 30%;
+}
+
+#home .header section{
+    width: 80%;
+    margin: 5% auto;
+}
+
+/* --- SERVICES --- */
+
+#services div{
+    align-items: center;
+}
+#services div p{
+    width: 90%;
+}
+#services div div{
+    width: 10%;
+}
+#services div i {
+    width: 10%;
+}
+    
+#certificate {
+    width: 10%;
+    left: 13px;
+    bottom: -15px;
+    position: absolute;
+    font-size: 2em;
+}
+#certificate-text {
+    left: 24px;
+    bottom: -11px;
+    color: white;}
+
+ 
+
+/* === ABOUT ME === */
+
+#about-me main{
+    width: 742px;
+    margin: 5% auto;
+}
+
+#about-me img, #about-me article{ 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
+    max-width: 100%;
+    border: 2px solid white;
+}
+
+.img-text-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.bottom-left-text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+/* --- BIO --- */
+#bio, article p{
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+#hero-text{
+    width: 92%;
+    margin: 0 auto;
+    left: 30px;
+    bottom: 25px;
+}
+
+#boat, #about-me article, #bio-header, #bio-sub, #activity-header, #mcr {
+    margin-top: 5%;
+} 
+#bio-side, #bmw, #activity-side{
+    width: 42%;
+}
+ 
+#bandit, #brothers, #elvis{
+    width: 50%;
+}
+ 
+/* --- ACTIVITY --- */
+#activity-article{
+    padding: 0px 50px;
+}
+
+#idkhow{
+    width: 55%;
+}
