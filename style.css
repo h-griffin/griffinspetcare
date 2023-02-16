@@ -8,7 +8,7 @@ body {
 
 i{
     font-size: 1.5em;
-    color: #bccbe9;
+    color: #8a9aba;
 }
 
 h1 {
@@ -216,22 +216,44 @@ table.month thead {
 }
 
 #home-article{
+    margin-left: 50px;
+    padding-left: 50px;
     justify-content: center;
+    border-left: 2px solid dimgrey;
 }
+#home-article div{
+    text-align: left;
+}
+#home-article div a i{
+    color: #bccbe9;
+}
+
+@media screen and (min-width: 800px){
+    /* hover on desktop only */
+    #home-article div a i:hover{
+        color: #8a9aba;
+    }
+}
+
  
-#home-hero h3, #home-hero h1{
+#home-hero h3, #home-hero h1, #home-hero h4{
     text-align: left;
     margin: 0;
 }
+#home-hero h3, #home-hero h4{
+    color: dimgrey;
+}
 
 #griffin{
-    width: 35%;
+    width: 30%;
 }
 
 #home .header section{
     width: 80%;
-    margin: 0 auto;
+    margin: 5% auto;
 }
+
+/* --- SERVICES --- */
 
 #services div{
     align-items: center;
@@ -248,21 +270,17 @@ table.month thead {
     
 #certificate {
     width: 10%;
-    left: 19px;
+    left: 13px;
     bottom: -15px;
     position: absolute;
+    font-size: 2em;
 }
 #certificate-text {
-    left: 27px;
-    bottom: -15px;
+    left: 24px;
+    bottom: -11px;
     color: white;}
 
-
-
-.fa-house-heart:before {
-    content: "\f4c9";
-}
-
+ 
 
 /* === ABOUT ME === */
 
