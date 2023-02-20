@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Calendar | Griffin's Pet Care</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body id="calendar">
     <nav>
-        <a href="/griffinspetcare/index.html">
+        <a href="/index.html">
             <div>Home</div>
         </a>
-        <a href="/griffinspetcare/calendar.html" class="current">
+        <a href="/calendar.html" class="current">
             <div>Calendar</div>
         </a>
-        <a href="/griffinspetcare/about-me.html">
+        <a href="/about-me.html">
             <div>About Me</div>
         </a>
     </nav>
@@ -40,12 +40,31 @@
                 <button class="tab-button" data-id="nov">Nov</button>
                 <button class="tab-button" style="border-top-right-radius: 10px;" data-id="dec">Dec</button>
             </div>
+
+            <!-- <label for="dog-names"></label> -->
+            <select class="mobile-months" name="month" id="month"  >
+                <!-- <option value="rigatoni">Rigatoni</option> -->
+                <option selected>Select Month</option>
+                <option class="tab-button" value="jan">January</option>
+                <option class="tab-button" value="feb">February</option>
+                <option class="tab-button" value="mar">March</option>
+                <option class="tab-button" value="apr">April</option>
+                <option class="tab-button" value="may">May</option>
+                <option class="tab-button" value="june">June</option>
+                <option class="tab-button" value="july">July</option>
+                <option class="tab-button" value="aug">August</option>
+                <option class="tab-button" value="sept">September</option>
+                <option class="tab-button" value="oct">October</option>
+                <option class="tab-button" value="nov">November</option>
+                <option class="tab-button" value="dec">December</option>
+            </select>
+            
             <div class="contentWrapper">
                 <div class="content" id="jan">
                     <h2>January</h2>
 
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -54,6 +73,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -110,7 +140,7 @@
                 <div class="content active" id="feb">
                     <h2>February</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -119,6 +149,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -173,7 +214,7 @@
                 <div class="content" id="mar">
                     <h2>March</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -182,6 +223,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -236,7 +288,7 @@
                 <div class="content" id="apr">
                     <h2>April</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -245,6 +297,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -272,20 +335,20 @@
                                 <td>11</td>
                                 <td>12</td>
                                 <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
+                                <td class="unavailable">14</td>
+                                <td class="unavailable">15</td>
                             </tr>
                             <tr>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                                <td>22</td>
+                                <td class="unavailable">16</td>
+                                <td class="unavailable">17</td>
+                                <td class="unavailable">18</td>
+                                <td class="unavailable">19</td>
+                                <td class="unavailable">20</td>
+                                <td class="unavailable">21</td>
+                                <td class="unavailable">22</td>
                             </tr>
                             <tr>
-                                <td>23</td>
+                                <td class="unavailable">23</td>
                                 <td>24</td>
                                 <td>25</td>
                                 <td>26</td>
@@ -308,7 +371,7 @@
                 <div class="content" id="may">
                     <h2>May</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -317,6 +380,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -371,7 +445,7 @@
                 <div class="content" id="june">
                     <h2>June</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -380,6 +454,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -434,7 +519,7 @@
                 <div class="content" id="july">
                     <h2>July</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -443,6 +528,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -506,7 +602,7 @@
                 <div class="content" id="aug">
                     <h2>August</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -515,6 +611,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -569,7 +676,7 @@
                 <div class="content" id="sept">
                     <h2>September</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -578,6 +685,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -633,7 +751,7 @@
                     <h2>October</h2>
 
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -642,6 +760,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -696,7 +825,7 @@
                 <div class="content" id="nov">
                     <h2>November</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -705,6 +834,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -759,7 +899,7 @@
                 <div class="content" id="dec">
                     <h2>December</h2>
                     <table class="month">
-                        <thead>
+                        <thead class="desktop-days">
                             <tr>
                                 <th>Sunday</th>
                                 <th>Monday</th>
@@ -768,6 +908,17 @@
                                 <th>Thursday</th>
                                 <th>Friday</th>
                                 <th>Saturday</th>
+                            </tr>
+                        </thead>
+                        <thead class="mobile-days">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -841,7 +992,7 @@
 
         <br>
         <small>last updated</small>
-        <h4 style="margin-top: 0">Tuesday, Feb 14 @ 10:30am</h4>
+        <h4 style="margin-top: 0">Sunday, Feb 19 @ 1:30pm</h4>
 
     </main>
 
@@ -849,7 +1000,7 @@
 
 </html>
 
-<script src="index.js"></script>
+<script src="./assets/index.js"></script>
 </body>
 
 </html>

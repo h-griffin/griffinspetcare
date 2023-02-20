@@ -38,6 +38,7 @@ nav{
     justify-content: space-evenly;
     width: 40%;
     margin: 2% auto;
+    margin-top: 3%;
 }
 
 nav a{
@@ -57,10 +58,107 @@ a.current div{
     background-color: #bccbe9;
 }
 
-/* hover on desktop only */
+/* desktop styles */
 @media screen and (min-width: 800px){
+    /* hover on desktop only */
     a div:hover  {
         background-color: #bccbe9;
+    }
+}
+
+/* mobile styles */
+@media screen and (max-width: 1000px){
+    
+    nav{
+        width: 60%;
+    }
+ 
+}
+@media screen and (max-width: 900px){
+    
+    nav{
+        width: 70%;
+    }
+
+    .wrapper, table.customTable, .header, #about-me main{
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 700px){
+    nav{
+        width: 90%;
+    }
+
+    #activity-article{
+        padding: 0 !important;
+    }
+ 
+    img#griffin{
+        width: 40%;
+    }
+
+    #certificate{
+        left: 7px !important;
+        bottom: -14px !important;
+    }
+    #certificate-text{
+        left: 18px !important;
+        bottom: -10px !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    nav{
+        width: 100%;
+    }
+    a div{
+        padding: 10px 0px;
+    }
+
+    #home-hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #home-article{
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        justify-content: center !important;
+        border-left: none !important;
+
+        /* border-bottom: 2px solid dimgrey; */
+        margin-top: 3%;
+        padding-top: 3%;
+    }
+    #home-article h1, #home-article h3, #home-article h4,
+    #home-article div{
+        text-align: center !important;
+    }
+    img#griffin{
+        width: 70%;
+    }
+
+    #certificate{
+        left: 0px !important;
+    }
+    #certificate-text{
+        left: 12px !important;
+    }
+
+    #home .header section{
+        width: 90% !important;
+        margin-top: 15% !important;
+    }
+    #services div{
+        flex-direction: column;
+    }
+    #services div p {
+        text-align: center;
+        width: 100% !important;
+    }
+
+    .wrapper{
+        padding-top: 5%;
     }
 }
 
@@ -70,6 +168,7 @@ a.current div{
 .wrapper {
     width: 742px;
     margin: auto;
+
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
@@ -81,12 +180,35 @@ a.current div{
     /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
+.mobile-months{
+    display: none;
+}
+
+.mobile-days{
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
 
     /* on mobile have months as select drop down not tabs - or put tabs in a drop down? */
     .buttonWrapper {
-        display: grid;
+        display: none;
     }
+
+    .mobile-months{
+        display: block;
+        margin: 0 auto;
+        font-size: 1.5em;
+    }
+ 
+
+    .mobile-days{
+        display: table-header-group;
+    }
+    .desktop-days{
+        display: none;
+    }
+
 }
 
 button {
@@ -216,8 +338,8 @@ table.month thead {
 }
 
 #home-article{
-    margin-left: 50px;
-    padding-left: 50px;
+    margin-left: 5%;
+    padding-left: 5%;
     justify-content: center;
     border-left: 2px solid dimgrey;
 }
@@ -318,9 +440,22 @@ table.month thead {
 #hero-text{
     width: 92%;
     margin: 0 auto;
-    left: 30px;
-    bottom: 25px;
+    left: 4%;
+    bottom: 7%;
+    color: black; 
 }
+
+@media screen and (max-width: 500px){
+    #hero-text{
+        left: 0;
+        bottom: 0;
+        position: unset;
+        width: 100%;
+        background-color: white !important;
+    }
+}
+
+
 
 #boat, #about-me article, #bio-header, #bio-sub, #activity-header, #mcr {
     margin-top: 5%;
