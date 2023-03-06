@@ -457,14 +457,14 @@ table.month thead {
 
 
 
-#boat, #about-me article, #bio-header, #bio-sub, #activity-header, #mcr {
+#boat, #about-me article, #bio-header, #bio-sub, #dog-paintings, #charcoal-drawings, #house-paintings {
     margin-top: 5%;
 } 
-#bio-side, #bmw, #activity-side{
+#bio-side, #bmw{
     width: 42%;
 }
  
-#bandit, #brothers, #elvis{
+#bandit, #brothers{
     width: 50%;
 }
  
@@ -473,6 +473,16 @@ table.month thead {
     padding: 0px 50px;
 }
 
-#idkhow{
-    width: 55%;
+#art-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cami-painting, #nanook-painting, #bothell, #bellevue{
+    width: 47%;
+}
+
+#elvis, #conor, #pete{
+    width: 30%;
 }
