@@ -64,6 +64,9 @@ a.current div{
     a div:hover  {
         background-color: #bccbe9;
     }
+    #art-links p a i:hover {
+        color: #bccbe9;
+    }
 }
 
 /* mobile styles */
@@ -346,8 +349,12 @@ table.month thead {
 #home-article div{
     text-align: left;
 }
+#home-article div a {
+    padding-right: 5%;
+}
 #home-article div a i{
     color: #bccbe9;
+    font-size: 2em;
 }
 
 @media screen and (min-width: 800px){
@@ -473,10 +480,18 @@ table.month thead {
     padding: 0px 50px;
 }
 
-#art-links{
+#art-links div{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#art-links p{
+    margin: 0;
+    font-size: 1.5em;
+}
+#art-handle{
+    margin-top: -3% !important;
+
 }
 
 #cami-painting, #nanook-painting, #bothell, #bellevue{
