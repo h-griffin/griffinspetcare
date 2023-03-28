@@ -183,6 +183,14 @@ a.current div{
     /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
+main h1#year{
+    margin-bottom: 0;
+}
+main p#rates{
+    margin-top: 0;
+    text-align: center;
+} 
+
 .mobile-months{
     display: none;
 }
