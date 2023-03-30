@@ -1,21 +1,13 @@
-# griffins pet care
+# [GriffinsPetCare.com](griffinspetcare.com)
 
-- home/info
-  - rate
-  - in home pet care
-  - plants
-  - packages
-- about me
-  - location
-  - bio
-  - dev
-  - dog experience
-  - dog gallery
-- avalability/schedule
+ 
+# H Griffin 
+I am a lifelong pet owner and animal lover with over six years of experience with In-Home Pet Care and a background in software development, and commission art.
 
-  - calendar
-    - available/unavailable white/grey
-    - 2023
+**see 2023 availability [here](https://griffinspetcare.com/calendar)**
+
+
+## todo
   - contact
     - email
     - form
@@ -27,5 +19,5 @@
       - emergency contact - number & name
       - medication - bool
   - select days and auto fill
-
-- add to linktree
+ 
+ 
