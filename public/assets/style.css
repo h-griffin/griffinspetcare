@@ -133,10 +133,11 @@ a.current div{
         margin-top: 3%;
         padding-top: 3%;
     }
-    #home-article h1, #home-article h3, #home-article h4,
+    #home-article h1, #home-article h2, #home-article h3,
     #home-article div{
         text-align: center !important;
-    }
+        padding-left: 0 !important;
+    }  
     img#griffin{
         width: 70%;
     }
@@ -356,14 +357,31 @@ table.month thead {
 }
 #home-article div{
     text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 10%;
 }
-#home-article div a {
+#home-article div a, #art-links div p a {
     padding-right: 5%;
-}
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #8a9aba;
+} 
 #home-article div a i{
     color: #bccbe9;
     font-size: 2em;
 }
+#home-article div a small, #art-links div p a small{
+    /* font-size: 0; */
+    padding: 0;
+    display: inline-block;
+    color: #4a5c7f;
+}
+
 
 @media screen and (min-width: 800px){
     /* hover on desktop only */
@@ -373,15 +391,16 @@ table.month thead {
 }
 
  
-#home-hero h3, #home-hero h1, #home-hero h4{
+#home-hero h1, #home-hero h2, #home-hero h3{
     text-align: left;
     margin: 0;
 }
-#home-hero h3, #home-hero h4{
+#home-hero h2, #home-hero h3{
     color: dimgrey;
 }
 
 #griffin{
+    object-fit: contain;
     width: 30%;
 }
 
@@ -433,6 +452,9 @@ table.month thead {
     max-width: 100%;
     border: 2px solid white;
 }
+/* #about-me img{
+    object-fit: contain;
+} */
 
 .img-text-container {
     position: relative;
