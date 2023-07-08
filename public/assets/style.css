@@ -343,10 +343,41 @@ table.month thead {
     padding: 5% 0px;
 }
 
+main{
+    position: relative;
+}
+
+#cpr-certificate{
+    position: sticky;
+    transform: translate(85%,-65%);
+}
+#cpr-certificate div {
+    width: fit-content;
+    position: relative;
+
+}
+#cpr-certificate p {
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 12px;
+}
+#cpr-certificate i{
+    color: #ffff75;
+    font-size: 160px;
+
+}
+#cpr-certificate div p i {
+    color: black;
+    font-size: 20px;
+}
+
 #home-hero{
     width: 80%;
     margin: 0 auto;
     justify-content: center;
+    margin-top: -20%;
 }
 
 #home-article{
@@ -482,6 +513,16 @@ table.month thead {
     color: black; 
 }
 
+@media screen and (max-width: 900px){
+     #cpr-certificate{
+        transform: translate(83%,-50%);
+     }
+}
+@media screen and (max-width: 700px){
+     #cpr-certificate{
+        transform: translate(78%,-38%);
+     }
+}
 @media screen and (max-width: 500px){
     #hero-text{
         left: 0;
@@ -490,6 +531,11 @@ table.month thead {
         width: 100%;
         background-color: white !important;
     }
+
+    #cpr-certificate{
+        transform: translate(64%,-25%);
+     }
+    
 }
 
 
