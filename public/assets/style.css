@@ -208,6 +208,13 @@ main p#rates {
     text-align: center;
 }
 
+main div a.calendar-link{
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
+
 .mobile-months {
     display: none;
 }
@@ -388,7 +395,7 @@ main {
 
 #cpr-certificate i {
     /* color: #ffff75; */
-    color: #fff27a;
+    color: #ffe79e;
     font-size: 160px;
 
 }
