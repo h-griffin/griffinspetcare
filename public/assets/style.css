@@ -365,13 +365,15 @@ main {
 }
 
 #cpr-certificate {
-    position: sticky;
-    transform: translate(85%, -65%);
+    /* position: sticky; */
+    /* transform: translate(85%, -65%); */
     width: fit-content;
+    margin: 0 auto;
+    padding-top: 5%;
 }
 
 #cpr-certificate div {
-    width: fit-content;
+    width: fit-content  ;
     position: relative;
 
 }
@@ -548,17 +550,7 @@ main {
     color: black;
 }
 
-@media screen and (max-width: 900px) {
-    #cpr-certificate {
-        transform: translate(83%, -50%);
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #cpr-certificate {
-        transform: translate(78%, -38%);
-    }
-}
+ 
 
 @media screen and (max-width: 500px) {
     #hero-text {
@@ -568,20 +560,10 @@ main {
         width: 100%;
         background-color: white !important;
     }
-
-    #cpr-certificate {
-        transform: translate(64%, -25%);
-    }
-
-}
-@media screen and (max-width: 400px) {
  
 
-    #cpr-certificate {
-        transform: translate(54%, -20%);
-    }
-
 }
+ 
 
 
 
