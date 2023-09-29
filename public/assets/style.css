@@ -387,7 +387,8 @@ main {
 }
 
 #cpr-certificate i {
-    color: #ffff75;
+    /* color: #ffff75; */
+    color: #fff27a;
     font-size: 160px;
 
 }
