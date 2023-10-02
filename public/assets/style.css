@@ -386,6 +386,9 @@ table.month thead {
     justify-content: space-between;
     gap: 20px;
 }
+.double-input-container .input-container{
+    width: 100%;
+}
  
 .input-container input, .input-container textarea{
     width: 100%;
