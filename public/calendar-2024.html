@@ -29,8 +29,8 @@
 
     
     <title>2024 Calendar | Griffin's Pet Care</title>
-    <link rel="stylesheet" href="./assets/style.min.css">
-    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/style.min.css"> -->
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body id="calendar">
@@ -1016,6 +1016,62 @@
         <small>last updated</small>
         <h4 style="margin-top: 0"> 10/01/23</h4>
 
+
+        <div class="contact-container ">
+            <div>
+                <h1>
+                    Contact
+                </h1>
+                <p>
+                    Fill out the form below to send me a message.
+                </p>
+            </div>
+            <div class="form-container ">
+                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <input type="hidden" name="access_key" value="806196a1-88cf-49ae-b20f-af1b42e2c04c" />
+                    <input type="hidden" name="subject" value="New 2024 Web3 Submission on griffinspetcare.com" />
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                    <div class="input-container">
+                        <label for="name">Full
+                            Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email
+                            Address</label>
+                        <input type="email" name="email" id="email" placeholder="you@company.com" required />
+                    </div>
+                    <div class="input-container">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required />
+                    </div> 
+                    <div class="double-input-container">
+                        <div class="input-container ">
+                            <label for="phone">Start Date </label>
+                            <input type="text" name="start-date" id="start-date" placeholder="January 1st" required />
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">End Date </label>
+                            <input type="text" name="end-date" id="end-date" placeholder="January 7th" required />
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Your
+                            Message</label>
+
+                        <textarea rows="5" name="message" id="message"
+                            placeholder="city location, number/type of pets, plant care etc..." required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" >
+                            Send Message
+                        </button>
+                    </div>
+                    <p id="result"></p>
+                </form>
+            </div>
+        </div> 
     </main>
 
     <h2>H@GriffinsPetCare.com</h2>

@@ -28,8 +28,8 @@
 
 
     <title>2023 Calendar | Griffin's Pet Care</title>
-    <link rel="stylesheet" href="./assets/style.min.css">
-    <!-- <link rel="stylesheet" href="./assets/style.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/style.min.css"> -->
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body id="calendar">
@@ -1022,73 +1022,63 @@
         <br>
         <small>last updated</small>
         <h4 style="margin-top: 0"> 10/01/23</h4>
-
-        <!-- 
-    =======================================================================
-
-    This is a working contact form. To receive email, 
-    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
-
-    Create Access Key here 👉 https://web3forms.com/
-
-     =======================================================================
- -->
-
-        <!-- <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
-            <div class="container mx-auto">
-                <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
-                    <div class="text-center">
-                        <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
-                            Contact Us
-                        </h1>
-                        <p class="text-gray-400 dark:text-gray-400">
-                            Fill up the form below to send us a message.
-                        </p>
-                    </div>
-                    <div class="m-7">
-                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
-                            <input type="hidden" name="access_key" value="806196a1-88cf-49ae-b20f-af1b42e2c04c" />
-                            <input type="hidden" name="subject"
-                                value="New Submission from Web3Forms on griffinspetcare.com" />
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-                            <input type="checkbox" name="botcheck" id="" style="display: none;" />
-                            <div class="mb-6">
-                                <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full
-                                    Name</label>
-                                <input type="text" name="name" id="name" placeholder="John Doe" required
-                                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-                            </div>
-                            <div class="mb-6">
-                                <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email
-                                    Address</label>
-                                <input type="email" name="email" id="email" placeholder="you@company.com" required
-                                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-                            </div>
-                            <div class="mb-6">
-                                <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
-                                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required
-                                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your
-                                    Message</label>
-
-                                <textarea rows="5" name="message" id="message" placeholder="Your Message"
-                                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
-                                    required></textarea>
-                            </div>
-                            <div class="mb-6">
-                                <button type="submit"
-                                    class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
-                                    Send Message
-                                </button>
-                            </div>
-                            <p class="text-base text-center text-gray-400" id="result"></p>
-                        </form>
-                    </div>
-                </div>
+ 
+ 
+        <div class="contact-container ">
+            <div>
+                <h1>
+                    Contact
+                </h1>
+                <p>
+                    Fill out the form below to send me a message.
+                </p>
             </div>
-        </div> -->
+            <div class="form-container ">
+                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <input type="hidden" name="access_key" value="806196a1-88cf-49ae-b20f-af1b42e2c04c" />
+                    <input type="hidden" name="subject" value="New 2023 Web3 Submission on griffinspetcare.com" />
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                    <div class="input-container">
+                        <label for="name">Full
+                            Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email
+                            Address</label>
+                        <input type="email" name="email" id="email" placeholder="you@company.com" required />
+                    </div>
+                    <div class="input-container">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required />
+                    </div> 
+                    <div class="double-input-container">
+                        <div class="input-container ">
+                            <label for="phone">Start Date </label>
+                            <input type="text" name="start-date" id="start-date" placeholder="January 1st" required />
+                        </div>
+                        <div class="input-container">
+                            <label for="phone">End Date </label>
+                            <input type="text" name="end-date" id="end-date" placeholder="January 7th" required />
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="message">Your
+                            Message</label>
+
+                        <textarea rows="5" name="message" id="message"
+                            placeholder="city location, number/type of pets, plant care etc..." required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" >
+                            Send Message
+                        </button>
+                    </div>
+                    <p id="result"></p>
+                </form>
+            </div>
+        </div> 
 
     </main>
 
