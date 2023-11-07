@@ -89,7 +89,7 @@ a.current div {
         width: 70%;
     }
 
-    .wrapper, table.customTable, .header, #about-me main {
+    .wrapper, table.customTable, .header, #about-me main, .contact-container {
         width: 90% !important;
     }
 }
@@ -206,6 +206,13 @@ main h1#year {
 main p#rates {
     margin-top: 0;
     text-align: center;
+}
+
+main div a.calendar-link{
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
 }
 
 .mobile-months {
@@ -347,6 +354,59 @@ table.month thead {
     align-items: center;
 }
 
+/* === CONTACT FORM === */
+.contact-container{
+    width: 742px;
+    margin: 5% auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgb(0 0 0 / 10%);
+}
+.contact-container h1{
+    margin: 0;
+    padding-top: 5%;
+}
+.contact-container p{
+    margin: 0;
+    text-align: center;
+    color: grey;
+}
+.form-container{
+    margin: 5%;
+}
+.form-container button{
+    border-radius: 50px;
+}
+.input-container{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.double-input-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.double-input-container .input-container{
+    width: 100%;
+}
+ 
+.input-container input, .input-container textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: lightgrey;
+    border-radius: 5px;
+    border-width: 1px;
+ 
+    border-style: solid;
+}
+.input-container textarea{
+    font-family: inherit;
+    font-size: medium;
+}
+.input-container input::placeholder{
+    color: grey;
+}
 
 
 /* === HOME === */
@@ -365,13 +425,15 @@ main {
 }
 
 #cpr-certificate {
-    position: sticky;
-    transform: translate(85%, -65%);
+    /* position: sticky; */
+    /* transform: translate(85%, -65%); */
     width: fit-content;
+    margin: 0 auto;
+    padding-top: 5%;
 }
 
 #cpr-certificate div {
-    width: fit-content;
+    width: fit-content  ;
     position: relative;
 
 }
@@ -385,7 +447,8 @@ main {
 }
 
 #cpr-certificate i {
-    color: #ffff75;
+    /* color: #ffff75; */
+    color: #ffe79e;
     font-size: 160px;
 
 }
@@ -548,17 +611,7 @@ main {
     color: black;
 }
 
-@media screen and (max-width: 900px) {
-    #cpr-certificate {
-        transform: translate(83%, -50%);
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #cpr-certificate {
-        transform: translate(78%, -38%);
-    }
-}
+ 
 
 @media screen and (max-width: 500px) {
     #hero-text {
@@ -568,20 +621,10 @@ main {
         width: 100%;
         background-color: white !important;
     }
-
-    #cpr-certificate {
-        transform: translate(64%, -25%);
-    }
-
-}
-@media screen and (max-width: 400px) {
  
 
-    #cpr-certificate {
-        transform: translate(54%, -20%);
-    }
-
 }
+ 
 
 
 
