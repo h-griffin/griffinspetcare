@@ -408,6 +408,14 @@ table.month thead {
     color: grey;
 }
 
+#form-submit{
+    width: 100px;
+    border-radius: 50px;
+    border: 2px solid #bccbe9;
+    color: #000;
+    letter-spacing: unset;
+}
+
 
 /* === HOME === */
 
@@ -477,7 +485,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-left: 10%;
 }
 
 #home-article div a, #art-links div p a {
