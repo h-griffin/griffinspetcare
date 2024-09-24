@@ -173,7 +173,11 @@ a.current div {
 
     #services div p {
         text-align: center;
-        width: 100% !important;
+        width: 100%;
+    }
+    
+    #cpr-certificate p {
+        width: unset !important;
     }
 
     .wrapper {
@@ -201,6 +205,15 @@ a.current div {
 
 main h1#year {
     margin-bottom: 0;
+}
+main h1#nextYear {
+    margin-bottom: 0;
+    background-color: #ffe79e;
+    padding: 5px 25px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 main p#rates {
@@ -441,7 +454,7 @@ main {
 }
 
 #cpr-certificate div {
-    width: fit-content  ;
+    width: fit-content !important ;
     position: relative;
 
 }
@@ -452,13 +465,14 @@ main {
     top: 20px;
     left: 20px;
     font-size: 12px;
+    width: unset !important;
 }
 
 #cpr-certificate i {
     /* color: #ffff75; */
     color: #ffe79e;
     font-size: 160px;
-
+    width: 100% !important;
 }
 
 #cpr-certificate div p i {
