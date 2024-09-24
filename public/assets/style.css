@@ -173,7 +173,11 @@ a.current div {
 
     #services div p {
         text-align: center;
-        width: 100% !important;
+        width: 100%;
+    }
+    
+    #cpr-certificate p {
+        width: unset !important;
     }
 
     .wrapper {
