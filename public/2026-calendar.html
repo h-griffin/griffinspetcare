@@ -27,12 +27,12 @@
     <meta name="theme-color" content="#ffffff">
 
 
-    <title>2025 Calendar | Griffin's Pet Care</title>
+    <title>2026 Calendar | Griffin's Pet Care</title>
     <link rel="stylesheet" href="./assets/style.min.css">
     <!-- <link rel="stylesheet" href="./assets/style.css"> -->
 </head>
 
-<body id="calendar">
+<body id="calendar next-year-calendar">
     <nav>
         <a href="/">
             <div>Home</div>
@@ -48,11 +48,11 @@
     <main>
 
         <div>
-            <a href="/2026-calendar" class="calendar-link">
-                <div>2026</div>
+            <a href="/calendar" class="calendar-link">
+                <div>2025</div>
             </a>
         </div>
-        <h1 id="year">2025</h1>
+        <h1 id="year">2026</h1>
         <p id="rates">Overnight In-Home Pet Care <br> 1 dog: $75/day <br> +$15/day for each additional dog 
             <!-- <br><br> -->
             <!-- <small style="color: grey">work day walks & drop ins  •  sign for & collect packages  •  airport drop off & pickup</small> -->
@@ -61,7 +61,7 @@
 
         <div class="wrapper">
             <div class="buttonWrapper">
-                <button class="tab-button" style="border-top-left-radius: 10px;" data-id="jan">Jan</button>
+                <button class="tab-button active" style="border-top-left-radius: 10px;" data-id="jan">Jan</button>
                 <button class="tab-button" data-id="feb">Feb</button>
                 <button class="tab-button" data-id="mar">Mar</button>
                 <button class="tab-button" data-id="apr">Apr</button>
@@ -70,7 +70,7 @@
                 <button class="tab-button" data-id="july">July</button>
                 <button class="tab-button" data-id="aug">Aug</button>
                 <button class="tab-button" data-id="sept">Sept</button>
-                <button class="tab-button active" data-id="oct">Oct</button>
+                <button class="tab-button" data-id="oct">Oct</button>
                 <button class="tab-button" data-id="nov">Nov</button>
                 <button class="tab-button" style="border-top-right-radius: 10px;" data-id="dec">Dec</button>
             </div>
@@ -92,7 +92,7 @@
             </select>
 
             <div class="contentWrapper">
-                <div class="content" id="jan">
+                <div class="content  active" id="jan">
                     <h2>January</h2>
                     <table class="month">
                         <thead class="desktop-days">
@@ -122,46 +122,46 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
+                                <td></td>
+                                <td class="unavailable">1</td>
+                                <td class="unavailable">2</td>
+                                <td class="unavailable">3</td>
                             </tr>
                             <tr>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
+                                <td class="unavailable">4</td>
+                                <td class="unavailable">5</td>
+                                <td class="unavailable">6</td>
+                                <td class="unavailable">7</td>
                                 <td class="unavailable">8</td>
                                 <td class="unavailable">9</td>
                                 <td class="unavailable">10</td>
-                                <td class="unavailable">11</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">11</td>
                                 <td class="unavailable">12</td>
                                 <td class="unavailable">13</td>
                                 <td class="unavailable">14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td class="unavailable">18</td>
+                                <td class="unavailable">15</td>
+                                <td class="unavailable">16</td>
+                                <td class="unavailable">17</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">18</td>
                                 <td class="unavailable">19</td>
                                 <td class="unavailable">20</td>
                                 <td class="unavailable">21</td>
                                 <td class="unavailable">22</td>
                                 <td class="unavailable">23</td>
                                 <td class="unavailable">24</td>
-                                <td class="unavailable">25</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">26</td>
-                                <td class="unavailable">27</td>
-                                <td class="unavailable">28</td>
-                                <td class="unavailable">29</td>
+                                <td class="unavailable">25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
                                 <td class="unavailable">30</td>
                                 <td class="unavailable">31</td>
-                                <td></td>
                             </tr>
                         </tbody>
                     </table> 
@@ -193,50 +193,41 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
                                 <td class="unavailable">1</td>
-                            </tr>
-                            <tr>
                                 <td class="unavailable">2</td>
                                 <td class="unavailable">3</td>
                                 <td class="unavailable">4</td>
                                 <td class="unavailable">5</td>
                                 <td class="unavailable">6</td>
-                                <td class="unavailable">7</td>
-                                <td class="unavailable">8</td>
+                                <td>7</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">9</td>
-                                <td class="unavailable">10</td>
-                                <td class="unavailable">11</td>
-                                <td class="unavailable">12</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
                                 <td class="unavailable">13</td>
                                 <td class="unavailable">14</td>
+                            </tr>
+                            <tr>
                                 <td class="unavailable">15</td>
+                                <td class="unavailable">16</td>
+                                <td class="unavailable">17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
                             </tr>
                             <tr>
-                                <td>16</td>
-                                <td>17</td>
-                                <td class="unavailable">18</td>
-                                <td class="unavailable">19</td>
-                                <td class="unavailable">20</td>
-                                <td class="unavailable">21</td>
-                                <td class="unavailable">22</td>
-                            </tr>
-                            <tr>
-                                <td class="unavailable">23</td>
-                                <td class="unavailable">24</td>
-                                <td class="unavailable">25</td>
-                                <td class="unavailable">26</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
                                 <td>27</td>
-                                <td class="unavailable">28</td>
-                                <td></td>
-                            </tr>
+                                <td>28</td>
+                            </tr> 
                         </tbody>
                     </table>
                 </div>
@@ -266,54 +257,46 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="unavailable">1</td>
+                            <tr> 
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">2</td>
-                                <td class="unavailable">3</td>
-                                <td class="unavailable">4</td>
-                                <td class="unavailable">5</td>
-                                <td class="unavailable">6</td>
-                                <td class="unavailable">7</td>
-                                <td class="unavailable">8</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">9</td>
-                                <td class="unavailable">10</td>
-                                <td class="unavailable">11</td>
-                                <td class="unavailable">12</td>
-                                <td class="unavailable">13</td>
-                                <td class="unavailable">14</td>
-                                <td class="unavailable">15</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">16</td>
-                                <td class="unavailable">17</td>
-                                <td class="unavailable">18</td>
-                                <td class="unavailable">19</td>
-                                <td class="unavailable">20</td>
-                                <td class="unavailable">21</td>
-                                <td class="unavailable">22</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">23</td>
-                                <td class="unavailable">24</td>
-                                <td class="unavailable">25</td>
-                                <td class="unavailable">26</td>
-                                <td class="unavailable">27</td>
-                                <td class="unavailable">28</td>
-                                <td class="unavailable">29</td>
-                            </tr>
-                            <tr>
-                                <td class="unavailable">30</td>
-                                <td class="unavailable">31</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -351,45 +334,45 @@
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td class="unavailable">1</td>
-                                <td class="unavailable">2</td>
-                                <td class="unavailable">3</td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
                                 <td class="unavailable">4</td>
-                                <td class="unavailable">5</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">5</td>
                                 <td class="unavailable">6</td>
                                 <td class="unavailable">7</td>
                                 <td class="unavailable">8</td>
                                 <td class="unavailable">9</td>
                                 <td class="unavailable">10</td>
                                 <td class="unavailable">11</td>
+                            </tr>
+                            <tr>
                                 <td class="unavailable">12</td>
-                            </tr>
-                            <tr>
-                                <td class="unavailable">13</td>
-                                <td class="unavailable">14</td>
+                                <td>13</td>
+                                <td>14</td>
                                 <td>15</td>
-                                <td class="unavailable">16</td>
-                                <td class="unavailable">17</td>
-                                <td class="unavailable">18</td>
-                                <td class="unavailable">19</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">20</td>
-                                <td class="unavailable">21</td>
-                                <td class="unavailable">22</td>
-                                <td class="unavailable">23</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
                                 <td>24</td>
-                                <td class="unavailable">25</td>
-                                <td class="unavailable">26</td>
+                                <td>25</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">27</td>
-                                <td class="unavailable">28</td>
-                                <td class="unavailable">29</td>
-                                <td class="unavailable">30</td>
-                                <td></td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
                                 <td></td>
                                 <td></td>
                             </tr> 
@@ -427,45 +410,54 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td class="unavailable">1</td>
-                                <td class="unavailable">2</td>
-                                <td class="unavailable">3</td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">4</td>
-                                <td class="unavailable">5</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
                                 <td>6</td>
-                                <td>7</td>
+                                <td class="unavailable">7</td>
                                 <td class="unavailable">8</td>
                                 <td class="unavailable">9</td>
-                                <td class="unavailable">10</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">10</td>
                                 <td class="unavailable">11</td>
                                 <td class="unavailable">12</td>
-                                <td class="unavailable">13</td>
-                                <td class="unavailable">14</td>
+                                <td>13</td>
+                                <td>14</td>
                                 <td class="unavailable">15</td>
                                 <td class="unavailable">16</td>
+                            </tr>
+                            <tr>
                                 <td class="unavailable">17</td>
-                            </tr>
-                            <tr>
                                 <td class="unavailable">18</td>
-                                <td class="unavailable">19</td>
-                                <td class="unavailable">20</td>
-                                <td class="unavailable">21</td>
-                                <td class="unavailable">22</td>
-                                <td class="unavailable">23</td>
-                                <td class="unavailable">24</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">25</td>
-                                <td class="unavailable">26</td>
-                                <td class="unavailable">27</td>
-                                <td class="unavailable">28</td>
-                                <td class="unavailable">29</td>
-                                <td class="unavailable">30</td>
-                                <td class="unavailable">31</td> 
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>31</td> 
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
@@ -497,45 +489,45 @@
                         </thead>
                         <tbody>
                             <tr> 
-                                <td class="unavailable">1</td>
-                                <td class="unavailable">2</td>
-                                <td class="unavailable">3</td>
-                                <td class="unavailable">4</td>
-                                <td class="unavailable">5</td>
-                                <td class="unavailable">6</td>
-                                <td class="unavailable">7</td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">8</td>
-                                <td class="unavailable">9</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
                                 <td>10</td>
                                 <td>11</td>
                                 <td>12</td>
                                 <td>13</td>
-                                <td>14</td>
                             </tr>
                             <tr>
+                                <td>14</td>
                                 <td>15</td>
                                 <td>16</td>
                                 <td>17</td>
                                 <td>18</td>
-                                <td class="unavailable">19</td>
-                                <td class="unavailable">20</td>
-                                <td class="unavailable">21</td>
+                                <td>19</td>
+                                <td>20</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">22</td>
-                                <td class="unavailable">23</td>
-                                <td class="unavailable">24</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
                                 <td class="unavailable">25</td>
                                 <td class="unavailable">26</td>
                                 <td class="unavailable">27</td>
-                                <td class="unavailable">28</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">28</td>
                                 <td class="unavailable">29</td>
                                 <td class="unavailable">30</td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -573,46 +565,46 @@
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td>1</td>
-                                <td>2</td>
+                                <td></td>
+                                <td class="unavailable">1</td>
+                                <td class="unavailable">2</td>
                                 <td class="unavailable">3</td>
                                 <td class="unavailable">4</td>
-                                <td class="unavailable">5</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">5</td>
                                 <td class="unavailable">6</td>
-                                <td class="unavailable">7</td>
+                                <td>7</td>
                                 <td>8</td>
                                 <td>9</td>
-                                <td class="unavailable">10</td>
-                                <td class="unavailable">11</td>
-                                <td class="unavailable">12</td>
+                                <td>10</td>
+                                <td>11</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">13</td>
+                                <td>12</td>
+                                <td>13</td>
                                 <td>14</td>
                                 <td>15</td>
                                 <td>16</td>
                                 <td>17</td>
                                 <td>18</td>
-                                <td>19</td>
                             </tr>
                             <tr>
+                                <td>19</td>
                                 <td>20</td>
                                 <td>21</td>
                                 <td>22</td>
                                 <td>23</td>
                                 <td>24</td>
-                                <td class="unavailable">25</td>
-                                <td class="unavailable">26</td>
+                                <td>25</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">27</td>
+                                <td>26</td>
+                                <td>27</td>
                                 <td>28</td>
-                                <td>29</td>
+                                <td class="unavailable">29</td>
                                 <td class="unavailable">30</td>
                                 <td class="unavailable">31</td>
-                                <td></td>
                                 <td></td>
                             </tr> 
                         </tbody>
@@ -650,48 +642,48 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
                                 <td class="unavailable">1</td>
-                                <td class="unavailable">2</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">2</td>
                                 <td class="unavailable">3</td>
                                 <td class="unavailable">4</td>
-                                <td>5</td>
-                                <td>6</td>
-                                <td class="unavailable">7</td>
-                                <td class="unavailable">8</td>
-                                <td class="unavailable">9</td>
+                                <td class="unavailable">5</td>
+                                <td class="unavailable">6</td>
+                                <td>7</td>
+                                <td>8</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">10</td>
+                                <td>9</td>
+                                <td>10</td>
                                 <td>11</td>
                                 <td>12</td>
                                 <td>13</td>
                                 <td>14</td>
                                 <td>15</td>
-                                <td>16</td>
                             </tr>
                             <tr>
+                                <td>16</td>
                                 <td>17</td>
                                 <td>18</td>
                                 <td>19</td>
                                 <td>20</td>
                                 <td>21</td>
                                 <td>22</td>
-                                <td>23</td>
                             </tr>
                             <tr>
+                                <td>23</td>
                                 <td>24</td>
                                 <td>25</td>
                                 <td>26</td>
                                 <td>27</td>
                                 <td>28</td>
-                                <td class="unavailable">29</td>
-                                <td class="unavailable">30</td>
+                                <td>29</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">31</td>
-                                <td></td>
+                                <td>30</td>
+                                <td>31</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -701,7 +693,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="content " id="sept">
+                <div class="content" id="sept">
                     <h2>September</h2>
                     <table class="month">
                         <thead class="desktop-days">
@@ -729,45 +721,45 @@
                         <tbody>
                             <tr>
                                 <td></td>
-                                <td class="unavailable">1</td>
-                                <td class="unavailable">2</td>
-                                <td class="unavailable">3</td>
-                                <td class="unavailable">4</td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
                                 <td>5</td>
-                                <td>6</td>
                             </tr>
                             <tr>
+                                <td>6</td>
                                 <td>7</td>
                                 <td>8</td>
                                 <td>9</td>
                                 <td>10</td>
                                 <td>11</td>
                                 <td>12</td>
-                                <td>13</td>
                             </tr>
                             <tr>
-                                <td>14</td>
-                                <td>15</td>
+                                <td class="unavailable">13</td>
+                                <td class="unavailable">14</td>
+                                <td class="unavailable">15</td>
                                 <td class="unavailable">16</td>
                                 <td class="unavailable">17</td>
                                 <td class="unavailable">18</td>
                                 <td class="unavailable">19</td>
-                                <td class="unavailable">20</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">20</td>
                                 <td class="unavailable">21</td>
                                 <td class="unavailable">22</td>
                                 <td class="unavailable">23</td>
-                                <td class="unavailable">24</td>
-                                <td class="unavailable">25</td>
-                                <td class="unavailable">26</td>
-                                <td class="unavailable">27</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">28</td>
-                                <td class="unavailable">29</td>
-                                <td class="unavailable">30</td>
-                                <td></td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -775,7 +767,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="content  active " id="oct">
+                <div class="content  " id="oct">
                     <h2>October</h2>
 
                     <table class="month">
@@ -806,46 +798,46 @@
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
+                                <td></td>
+                                <td class="unavailable">1</td>
+                                <td class="unavailable">2</td>
+                                <td class="unavailable">3</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">4</td>
                                 <td class="unavailable">5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
+                                <td class="unavailable">6</td>
+                                <td class="unavailable">7</td>
+                                <td class="unavailable">8</td>
+                                <td class="unavailable">9</td>
+                                <td class="unavailable">10</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">11</td>
                                 <td class="unavailable">12</td>
                                 <td>13</td>
                                 <td>14</td>
                                 <td>15</td>
                                 <td>16</td>
-                                <td class="unavailable">17</td>
-                                <td class="unavailable">18</td>
+                                <td>17</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">19</td>
-                                <td class="unavailable">20</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
                                 <td>21</td>
-                                <td class="unavailable">22</td>
-                                <td class="unavailable">23</td>
-                                <td class="unavailable">24</td>
-                                <td class="unavailable">25</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">26</td>
-                                <td class="unavailable">27</td>
-                                <td class="unavailable">28</td>
-                                <td class="unavailable">29</td>
-                                <td class="unavailable">30</td>
-                                <td class="unavailable">31</td>
-                                <td></td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
                             </tr>
                         </tbody>
                     </table>
@@ -876,60 +868,51 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="unavailable">1</td>
-                            </tr>
-                            <tr>
-                                <td class="unavailable">2</td>
+                            <tr> 
+                                <td>1</td>
+                                <td>2</td>
                                 <td>3</td>
                                 <td>4</td>
                                 <td>5</td>
                                 <td>6</td>
                                 <td>7</td>
-                                <td>8</td>
                             </tr>
                             <tr>
+                                <td>8</td>
                                 <td>9</td>
-                                <td class="unavailable">10</td>
-                                <td class="unavailable">11</td>
-                                <td class="unavailable">12</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
                                 <td class="unavailable">13</td>
                                 <td class="unavailable">14</td>
-                                <td class="unavailable">15</td>
                             </tr>
                             <tr>
-                                <td>16</td>
+                                <td class="unavailable">15</td>
+                                <td class="unavailable">16</td>
                                 <td>17</td>
                                 <td>18</td>
                                 <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                                <td>22</td>
+                                <td class="unavailable">20</td>
+                                <td class="unavailable">21</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">22</td>
                                 <td class="unavailable">23</td>
                                 <td class="unavailable">24</td>
                                 <td class="unavailable">25</td>
                                 <td class="unavailable">26</td>
                                 <td class="unavailable">27</td>
                                 <td class="unavailable">28</td>
-                                <td class="unavailable">29</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">29</td>
                                 <td class="unavailable">30</td>
                                 <td></td>
                                 <td></td> 
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                            </tr>
+                            </tr> 
                         </tbody>
                     </table>
                 </div>
@@ -961,46 +944,46 @@
                         <tbody>
                             <tr> 
                                 <td></td>
-                                <td class="unavailable">1</td>
-                                <td class="unavailable">2</td>
-                                <td class="unavailable">3</td>
-                                <td class="unavailable">4</td>
-                                <td class="unavailable">5</td>
-                                <td class="unavailable">6</td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
                             </tr>
                             <tr>
-                                <td class="unavailable">7</td>
-                                <td class="unavailable">8</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
                                 <td>9</td>
                                 <td>10</td>
                                 <td>11</td>
                                 <td>12</td>
-                                <td>13</td>
                             </tr>
                             <tr>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
+                                <td class="unavailable">13</td>
+                                <td class="unavailable">14</td>
+                                <td class="unavailable">15</td>
+                                <td class="unavailable">16</td>
+                                <td class="unavailable">17</td>
                                 <td class="unavailable">18</td>
                                 <td class="unavailable">19</td>
-                                <td class="unavailable">20</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">20</td>
                                 <td class="unavailable">21</td>
                                 <td class="unavailable">22</td>
                                 <td class="unavailable">23</td>
                                 <td class="unavailable">24</td>
                                 <td class="unavailable">25</td>
                                 <td class="unavailable">26</td>
-                                <td class="unavailable">27</td>
                             </tr>
                             <tr>
+                                <td class="unavailable">27</td>
                                 <td class="unavailable">28</td>
                                 <td class="unavailable">29</td>
                                 <td class="unavailable">30</td>
                                 <td class="unavailable">31</td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                             </tr> 
@@ -1020,7 +1003,7 @@
 
         <br>
         <small>last updated</small>
-        <h4 style="margin-top: 0"> 10/07/2025</h4>
+        <h4 style="margin-top: 0"> 10/7/2025</h4>
 
 
         <div class="contact-container ">
