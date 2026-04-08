@@ -40,9 +40,9 @@
         <a href="/calendar" class="current">
             <div>Calendar</div>
         </a>
-        <a href="/about-me">
+        <!-- <a href="/about-me">
             <div>About Me</div>
-        </a>
+        </a> -->
     </nav>
 
     <main>
@@ -53,18 +53,23 @@
             </a>
         </div> -->
         <h1 id="year">2026</h1>
-        <p id="rates">Overnight In-Home Pet Care <br> 1 dog: $75/day <br> +$15/day for each additional dog 
-            <!-- <br><br> -->
-            <!-- <small style="color: grey">work day walks & drop ins  •  sign for & collect packages  •  airport drop off & pickup</small> -->
-            <!-- <br> -->
+        <p id="rates">
+            <strong>Overnight In-Home Pet Care</strong>  
+            <br> 1 dog: $75/day 
+            <br> +$15/day for each additional dog 
+            <br><br>
+            <strong>Cats & Dog Walks  </strong>  
+            <br>$30/1hr drop-in
+            <!-- <br><br><small style="color: grey">water plants  •  sign & collect packages  •  feed fish & birds</small> -->
+            <br>
         </p>
 
         <div class="wrapper">
             <div class="buttonWrapper">
                 <button class="tab-button" style="border-top-left-radius: 10px;" data-id="jan">Jan</button>
                 <button class="tab-button" data-id="feb">Feb</button>
-                <button class="tab-button active" data-id="mar">Mar</button>
-                <button class="tab-button" data-id="apr">Apr</button>
+                <button class="tab-button" data-id="mar">Mar</button>
+                <button class="tab-button active" data-id="apr">Apr</button>
                 <button class="tab-button" data-id="may">May</button>
                 <button class="tab-button" data-id="june">June</button>
                 <button class="tab-button" data-id="july">July</button>
@@ -231,7 +236,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="content active" id="mar">
+                <div class="content" id="mar">
                     <h2>March</h2>
                     <table class="month">
                         <thead class="desktop-days">
@@ -305,7 +310,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="content" id="apr">
+                <div class="content active" id="apr">
                     <h2>April</h2>
                     <table class="month">
                         <thead class="desktop-days">
@@ -1003,7 +1008,7 @@
 
         <br>
         <small>last updated</small>
-        <h4 style="margin-top: 0"> 3/8/2026</h4>
+        <h4 style="margin-top: 0"> 4/7/2026</h4>
 
 
         <div class="contact-container ">
@@ -1024,16 +1029,16 @@
                     <div class="input-container">
                         <label for="name">Full
                             Name</label>
-                        <input type="text" name="name" id="name" placeholder="John Doe" required />
+                        <input type="text" name="name" id="name" placeholder="John Smith" required />
                     </div>
                     <div class="input-container">
                         <label for="email">Email
                             Address</label>
-                        <input type="email" name="email" id="email" placeholder="johndoe@company.com" required />
+                        <input type="email" name="email" id="email" placeholder="johnsmith@email.com" required />
                     </div>
                     <div class="input-container">
                         <label for="phone">Phone Number</label>
-                        <input type="text" name="phone" id="phone" placeholder="+1 (555) 123-4567" required />
+                        <input type="text" name="phone" id="phone" placeholder="(123) 456-7890" required />
                     </div> 
                     <div class="double-input-container">
                         <div class="input-container ">
@@ -1050,7 +1055,7 @@
                             Message</label>
 
                         <textarea rows="5" name="message" id="message"
-                            placeholder="city, number/type of pets, plant care etc..." required></textarea>
+                            placeholder="city, pets, plants etc..." required></textarea>
                     </div>
                     <div>
                         <button type="submit" id="form-submit">
