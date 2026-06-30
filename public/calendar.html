@@ -72,8 +72,8 @@
                     <button class="tab-button" data-id="mar">Mar</button>
                     <button class="tab-button" data-id="apr">Apr</button>
                     <button class="tab-button" data-id="may">May</button>
-                    <button class="tab-button active" data-id="june">June</button>
-                    <button class="tab-button" data-id="july">July</button>
+                    <button class="tab-button" data-id="june">June</button>
+                    <button class="tab-button active" data-id="july">July</button>
                     <button class="tab-button" data-id="aug">Aug</button>
                     <button class="tab-button" data-id="sept">Sept</button>
                     <button class="tab-button" data-id="oct">Oct</button>
@@ -468,7 +468,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="content active" id="june">
+                    <div class="content" id="june">
                         <h2>June</h2>
                         <table class="month">
                             <thead class="desktop-days">
@@ -542,7 +542,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="content" id="july">
+                    <div class="content active" id="july">
                         <h2>July</h2>
                         <table class="month">
                             <thead class="desktop-days">
@@ -580,10 +580,10 @@
                                 <tr>
                                     <td class="unavailable">5</td>
                                     <td class="unavailable">6</td>
-                                    <td>7</td>
-                                    <td>8</td>
-                                    <td>9</td>
-                                    <td>10</td>
+                                    <td class="unavailable">7</td>
+                                    <td class="unavailable">8</td>
+                                    <td class="unavailable">9</td>
+                                    <td class="unavailable">10</td>
                                     <td class="unavailable">11</td>
                                 </tr>
                                 <tr>
@@ -1009,52 +1009,51 @@
 
             <br>
             <small>last updated</small>
-            <h4 style="margin-top: 0"> 6/21/2026</h4>
+            <h4 style="margin-top: 0"> 6/29/2026</h4>
 
 
             <div class="contact-container ">
                 <div>
-                    <h1>
-                        Contact
-                    </h1>
+                    <!-- <h1> Contact </h1> -->
+                     <br>
                     <h2>Haley@GriffinsPetCare.com</h2>
-                    <p>
-                        complete and submit the form below to send me a message!
-                    </p>
+                    <!-- <small>reach out for info on dates! </small> -->
+                    <!-- <p> Submit the form below to send me a message! </p> -->
                 </div>
                 <div class="form-container ">
                     <form action="https://api.web3forms.com/submit" method="POST" id="form">
                         <input type="hidden" name="access_key" value="806196a1-88cf-49ae-b20f-af1b42e2c04c" />
-                        <input type="hidden" name="subject" value="New 2024 Web3 Submission on griffinspetcare.com" />
+                        <input type="hidden" name="subject" value="New Submission on griffinspetcare.com" />
                         <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                        <input type="hidden" name="from_name" value="Web3 petcare Notification">
                         <input type="checkbox" name="botcheck" id="" style="display: none;" />
                         <div class="input-container">
-                            <label for="name">Full
-                                Name</label>
-                            <input type="text" name="name" id="name" placeholder="John Smith" required />
+                            <label for="name"> Name *</label>
+                            <input type="text" name="name" id="name" placeholder="First Name" required />
                         </div>
-                        <div class="input-container">
-                            <label for="email">Email
-                                Address</label>
-                            <input type="email" name="email" id="email" placeholder="johnsmith@company.com" required />
-                        </div>
-                        <div class="input-container">
-                            <label for="phone">Phone Number</label>
-                            <input type="text" name="phone" id="phone" placeholder="(123) 456-7890" required />
-                        </div>
+                        <div class="double-input-container">
+                            <div class="input-container">
+                                <label for="phone">Phone Number *</label>
+                                <input type="text" name="phone" id="phone" placeholder="(123) 456-7890" required />
+                            </div>
+                            <div class="input-container">
+                                <label for="email">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="contact@email.com" />
+                            </div>
+                        </div>                         
+
                         <div class="double-input-container">
                             <div class="input-container ">
                                 <label for="phone">Start Date </label>
-                                <input type="text" name="start-date" id="start-date" placeholder="January 1st" required />
+                                <input type="text" name="start-date" id="start-date" placeholder="Depart January 1st AM" />
                             </div>
                             <div class="input-container">
                                 <label for="phone">End Date </label>
-                                <input type="text" name="end-date" id="end-date" placeholder="January 7th" required />
+                                <input type="text" name="end-date" id="end-date" placeholder="Return January 7th PM" />
                             </div>
                         </div>
                         <div class="input-container">
-                            <label for="message">Your
-                                Message</label>
+                            <label for="message">Your Message *</label>
 
                             <textarea rows="5" name="message" id="message" placeholder="city, pets, plants etc..." required></textarea>
                         </div>
@@ -1069,21 +1068,17 @@
             </div>
         </main>
 
-        <footer >
-            
+        <footer>
+
             <div id="logos">
                 <img src="./assets/home/cpr-seattle.webp" alt="cpr seattle logo" id="cpr">
                 <img src="./assets/home/psa-web-logo.webp" alt="pet sitters associates logo">
-            </div>  
+            </div>
 
         </footer>
-
-
-
-</html>
-
-<script src="./assets/index.min.js"></script>
-</body>
-
+        
+        <!-- </html> -->
+        <script src="./assets/index.min.js"></script>
+    </body>
 
 </html>
